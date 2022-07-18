@@ -31,3 +31,11 @@
 16. git checkout develop
 17. git merge master (merge changes done in master branch into develop branch)
 18. git push -u origin develop
+
+
+### deploy to heroku from master branch always
+1. git checkout master (if you're not in the master branch)
+2. heroku login
+3. heroku apps:create
+4. git remote -v
+5. git push -u heroku master
