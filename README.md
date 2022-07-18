@@ -22,3 +22,12 @@
 10. git add . (add to develop branch)
 11. git commit -m "add readme file" (add to develop branch)
 12. git push -u origin develop (push to remote git develop branch)
+13. git checkout master
+14. git merge develop (merge changes done in develop branch into master branch)
+15. git push -u origin master
+
+// make changes in master, and need to synchronise this change to develop branch
+// assume changes has already been checked into master branch
+16. git checkout develop
+17. git merge master (merge changes done in master branch into develop branch)
+18. git push -u origin develop
