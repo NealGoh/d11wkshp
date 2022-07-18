@@ -12,9 +12,9 @@ public class D11wkshpApplication {
 
 	public static void main(String[] args) {
 		//SpringApplication.run(D11wkshpApplication.class, args);
+		String port = "3000";
 		SpringApplication app = new SpringApplication(D11wkshpApplication.class);
 
-		String port = "3000";
 		ApplicationArguments cliOpts = new DefaultApplicationArguments(args);
 		if (cliOpts.containsOption("port")) {
 			port = cliOpts.getOptionValues("port").get(0);
